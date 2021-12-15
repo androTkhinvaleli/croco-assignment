@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
-
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -13,6 +13,7 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
   ],
   imports: [
     CommonModule,
+    MatTableModule,
     UserRoutingModule
   ]
 })

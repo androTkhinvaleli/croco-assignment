@@ -1,0 +1,12 @@
+:host {
+    width: 100%;
+}
+table {
+    width: 30%;
+}
+.row {
+    cursor: pointer;
+    &:hover {
+        background-color: #f0f0f0;
+    }
+}

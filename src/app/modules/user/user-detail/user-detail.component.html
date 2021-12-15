@@ -1,1 +1,5 @@
 <p>user-detail works!</p>
+
+<div *ngIf="(userData$ | async) as userInfo ">
+    {{userInfo | json}}
+</div>
