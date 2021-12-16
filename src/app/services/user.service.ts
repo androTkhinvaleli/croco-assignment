@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
 type User = any;
-
+type Post = any;
 @Injectable({
   providedIn: 'root'
 })
@@ -20,5 +20,9 @@ export class UserService {
 
   getUserById(id: number): Observable<User> {
     return this.httpClient.get<User>(`${environment.apiEndpoint}/users/${id}`);
+  }
+
+  getPostsByUserId(id: number): Observable<Post> {
+    return this.httpClient.get<Post>(`${environment.apiEndpoint}/posts?userId=${id}`);
   }
 }

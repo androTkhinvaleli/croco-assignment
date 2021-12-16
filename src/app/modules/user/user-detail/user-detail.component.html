@@ -1,5 +1,11 @@
 <p>user-detail works!</p>
 
 <div *ngIf="(userData$ | async) as userInfo ">
-    {{userInfo | json}}
+    <!-- {{userInfo | json}} -->
+    <!-- <p *ngFor="let item of (userInfo | objectEntries)">
+        <span>{{item.key}}: {{item.value | json}}</span>
+    </p> -->
+    <app-recursive-component [obj]="userInfo"></app-recursive-component>
+
+    <button mat-button color="primary" >User Posts</button>
 </div>

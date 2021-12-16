@@ -1,0 +1,4 @@
+<p *ngFor="let item of (obj | objectEntries)">
+    <span *ngIf="!item.isNested">{{item.key}}: {{item.value | json}}</span>
+    <app-recursive-component *ngIf="item.isNested" [obj]="item.value"></app-recursive-component>
+</p>
