@@ -1,4 +1,7 @@
 <p>posts works!</p>
+<a routerLink="../">go back</a>
+
+
 <div *ngIf="(posts$ | async) as posts" class="posts-wrapper">
     <mat-card class="post" *ngFor="let post of posts">
         <mat-card-subtitle>{{userName}}</mat-card-subtitle>

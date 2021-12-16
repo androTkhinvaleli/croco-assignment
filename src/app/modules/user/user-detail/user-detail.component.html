@@ -1,4 +1,5 @@
 <p>user-detail works!</p>
+<a routerLink="../">go back</a>
 
 <div *ngIf="(userData$ | async) as userInfo ">
     <!-- {{userInfo | json}} -->
@@ -7,5 +8,5 @@
     </p> -->
     <app-recursive-component [obj]="userInfo"></app-recursive-component>
 
-    <button mat-button color="primary" >User Posts</button>
+    <button mat-button color="primary" routerLink="./posts" >User Posts</button>
 </div>
