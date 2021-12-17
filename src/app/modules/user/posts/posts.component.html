@@ -1,11 +1,10 @@
-<p>posts works!</p>
-<a routerLink="../">go back</a>
+<h1>Posts</h1>
+<button class="primary back-button" mat-button routerLink="../"><mat-icon>arrow_left</mat-icon>go back</button>
 
-
-  <mat-card class="post" *ngFor="let post of posts">
-      <mat-card-subtitle>{{userName}}</mat-card-subtitle>
-      <mat-card-title>{{post.title}}</mat-card-title>
-      <mat-card-content>
-        <p>{{post.body}}</p>
-      </mat-card-content>
-    </mat-card>
+<div class="posts-wrapper">
+  <app-post-items *ngFor="let post of posts"
+    [title]="post.title"
+    [subTitle]="userName"
+    [text]="post.body"
+  ></app-post-items>
+</div>

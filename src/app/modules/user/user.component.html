@@ -1,6 +1,7 @@
-<p>user works!</p>
-<div *ngIf="(users$ | async) as userList; else elseBlock">
-    loaded
+
+<h1>Users</h1>
+
+<div *ngIf="(users$ | async) as userList; else elseBlock" class="users-list">
     <app-user-item *ngFor="let user of userList" [name]="user.name" routerLink="/user/{{user.id}}"></app-user-item>          
 </div>
 <ng-template #elseBlock>

@@ -1,12 +1,9 @@
-:host {
-    width: 100%;
+.users-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px
 }
-table {
-    width: 30%;
-}
-.row {
-    cursor: pointer;
-    &:hover {
-        background-color: #f0f0f0;
-    }
+
+h1 {
+    margin-top: 2vh;
 }

@@ -1,15 +1,24 @@
-.container {
+:host {
+    box-sizing: border-box;
     display: flex;
     width: 100%;
-    max-width: 368px;
+    max-width: 468px;
     align-items: center;
     justify-content: space-between;
-    height: 56px;
+    height: 64px;
     padding: 12px;
     cursor: pointer;
     background-color: #efefef;
     border-radius: 12px;
     color: #0d0d0d;
+
+    &.reverse {
+        flex-direction: row-reverse;
+
+        .icon {
+            transform: rotate(180deg);
+        }
+    }
 
     &:hover{
         background-color: #e7e7e7;
@@ -18,4 +27,16 @@
     &:active{
         background-color: #e0e0e0;
     }
+
+    &.orange {
+        background-color: #fae0d3;
+    }
+
+    &.orange:hover {
+        background-color: #fbc8ac;
+    }
+    &.orange:active {
+        background-color: #fbc8ac;
+    }
+
 }

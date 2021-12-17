@@ -21,6 +21,7 @@ export class UserDetailComponent implements OnInit {
     map(({params}: any) => params.id),
     switchMap((id: string) => this.httpClient.getUserById(id)),
   )
+
   ngOnInit(): void {
   }
 
