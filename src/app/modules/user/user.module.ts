@@ -7,8 +7,6 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 import {MatTableModule} from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
-import { ObjectEntriesPipe } from 'src/app/utilities/object-entries.pipe';
-import { RecursiveComponentComponent } from './utilities/recursive-component/recursive-component.component';
 import { PostsComponent } from './posts/posts.component';
 import { UserItemComponent } from './shared/user-item/user-item.component';
 import { PostItemsComponent } from './shared/post-items/post-items.component';
@@ -17,8 +15,6 @@ import { MatIconModule } from '@angular/material/icon';
   declarations: [
     UserComponent,
     UserDetailComponent,
-    ObjectEntriesPipe,
-    RecursiveComponentComponent,
     PostsComponent,
     UserItemComponent,
     PostItemsComponent,
