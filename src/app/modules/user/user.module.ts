@@ -10,7 +10,9 @@ import {MatCardModule} from '@angular/material/card';
 import { ObjectEntriesPipe } from 'src/app/utilities/object-entries.pipe';
 import { RecursiveComponentComponent } from './utilities/recursive-component/recursive-component.component';
 import { PostsComponent } from './posts/posts.component';
-
+import { UserItemComponent } from './shared/user-item/user-item.component';
+import { PostItemsComponent } from './shared/post-items/post-items.component';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     UserComponent,
@@ -18,6 +20,8 @@ import { PostsComponent } from './posts/posts.component';
     ObjectEntriesPipe,
     RecursiveComponentComponent,
     PostsComponent,
+    UserItemComponent,
+    PostItemsComponent,
   ],
   // providers: [ObjectEntriesPipe],
   imports: [
@@ -25,6 +29,7 @@ import { PostsComponent } from './posts/posts.component';
     MatTableModule,
     MatButtonModule,
     MatCardModule,
+    MatIconModule,
     UserRoutingModule
   ]
 })

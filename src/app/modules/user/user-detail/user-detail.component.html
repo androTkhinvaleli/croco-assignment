@@ -7,6 +7,8 @@
         <span>{{item.key}}: {{item.value | json}}</span>
     </p> -->
     <app-recursive-component [obj]="userInfo"></app-recursive-component>
-
+    {{ userInfo.name }}
     <button mat-button color="primary" routerLink="./posts" >User Posts</button>
 </div>
+
+<a routerLink="../4">other user with id 4</a>

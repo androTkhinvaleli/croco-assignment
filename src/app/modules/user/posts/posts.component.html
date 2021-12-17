@@ -2,12 +2,10 @@
 <a routerLink="../">go back</a>
 
 
-<div *ngIf="(posts$ | async) as posts" class="posts-wrapper">
-    <mat-card class="post" *ngFor="let post of posts">
-        <mat-card-subtitle>{{userName}}</mat-card-subtitle>
-        <mat-card-title>{{post.title}}</mat-card-title>
-        <mat-card-content>
-          <p>{{post.body}}</p>
-        </mat-card-content>
-      </mat-card>
-</div>
+  <mat-card class="post" *ngFor="let post of posts">
+      <mat-card-subtitle>{{userName}}</mat-card-subtitle>
+      <mat-card-title>{{post.title}}</mat-card-title>
+      <mat-card-content>
+        <p>{{post.body}}</p>
+      </mat-card-content>
+    </mat-card>
