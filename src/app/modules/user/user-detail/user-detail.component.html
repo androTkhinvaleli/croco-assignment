@@ -14,7 +14,12 @@
     <app-user-item [orange]="true" routerLink="./posts" name="User Posts"></app-user-item>
 
     <div class="navigation-buttons">
-        <app-user-item [reverse]="true" routerLink="../{{userInfo.id-1}}" name="previous user"></app-user-item>
-        <app-user-item routerLink="../{{userInfo.id+1}}" name="next user"></app-user-item>
+        <span class="button-wrapper">
+            <app-user-item [reverse]="true" routerLink="../{{userInfo.id-1}}" name="previous user" *ngIf="(userInfo.id > 1)"></app-user-item>
+        </span>
+
+        <span class="button-wrapper">
+            <app-user-item routerLink="../{{userInfo.id+1}}" name="next user" *ngIf="(userInfo.id < 10)"></app-user-item>
+        </span>
     </div>
 </div>
